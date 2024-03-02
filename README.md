@@ -22,4 +22,18 @@ aur agar apne ko multiple values print karni hai to console.log pe square braces
 
 agar js me koi variable ko initialised nahi karte to usme by default undefined store hota hai
 
+-----------------------------------------------------------
 
+01----datatypes
+
+javascript me pahle ke jo purane tarike thi like class, modules ...so abhi arrow function aur aise hi bhut nahi updates aaye...but javascript community apne purane codes ko nahi change karna chahte ...so unhone ek keyword define kiya.
+
+"use strict";...isko use karke code karoge to apka compiler apke code ko new version of java se treat karega
+
+but ab ye bhi ek standard ho gaya hai ... isko nahi bhi diya to bhi new version se hi treat hota hai...kyu sab log nahi updates logic hi use karte hai
+
+aur ek imp point app alert nahi use karte hai....karte hai but uske diffrent way hai node me...hum use isliye nahi kar sakte kyu ki ye node hai..agar yahi browser ka js compiler rahta to run ho jata but abhi error aata hai "ReferenceError: alert is not defined".
+
+javascript ka document ecma pe milta hai..sab browser wale milke ek ecma script banaya mtlb javascript ka standard ki..kaise kya hota hai
+
+js me java ke jaise alag se datatype batana nahi padta..python ki tarah compiler use detect kar leta hai ...
