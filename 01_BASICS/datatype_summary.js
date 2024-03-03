@@ -55,7 +55,7 @@ console.log(
 
 // console.log(myFunction());
 
-console.log(typeof "abc");
+//console.log(typeof "abc");
 
 
 /*
@@ -70,3 +70,40 @@ number -> number
 Boolean -> boolean
 string -> string
 */
+
+//***************************************Memory*******/
+
+//Stack(Primitive) , Heap(Non-primitive)
+
+//jab bhi stack memory use hoti hai iska mtlb ki apne jo bhi variable declare kiya hai uska apko ek copy milta hai
+
+//aur jab bhi koi chij heap ke andar jata hai to apko milta hai reference original value ka iska mtlb aap jo bhi change karenge wo original value me change hota hai
+
+let myName = "Umesh Maurya" //primitive value jayegi stack me
+
+let anotherName = myName  
+anotherName = "umya bhai"
+
+// console.log(myName);
+// console.log(anotherName);
+
+let user = {
+    email : "user@google.com",
+    upi : "123ybl.com"
+}
+
+//variable name store hoga stack me aur pura object store hoga heap me...
+//stack to heap reference jayega
+
+let userTwo = user
+
+//hum log ko same object ka reference mila hai na ki naya koi create hua hai
+//stack me dusra variable name bana hai but reference to object is same
+
+let str1 = "this is primitive str"
+
+console.log(typeof str1);// string
+
+let str2 = new String("this is non primitive");
+
+console.log(typeof str2); //object 
