@@ -6,7 +6,7 @@
 
 //object literals 
 //Object.create --> isi ko bolte hai constructor ke through banane kaa
-const simpleObject = {} //ban gaya object
+const simpleObject = {} //ban gaya object with literals
 
 const jsUser = {
     name: "Umesh",
@@ -49,3 +49,32 @@ console.log(jsUser); //it soes not have any effect on my object
 //Object.freeze(jsUser.location)          <------
 jsUser.location = "Khadavali" // due to freezing this changes does not reflect my object
 console.log(jsUser.location);
+
+console.log("******************************************************************************************");
+const newUser = {
+    name: "Umesh",
+    fullName :"Umesh Maurya",
+    age: 21,
+    location: "Mumbai",
+    email: "umes@gmail.com",
+    isLoggedIn: true,
+    lastLoginDays: ["Monday","Tuesday"]
+}
+//in below code hum log normal java ke jaise ek user class me function add karte the waise hi yaha pe ek object ke andar function ko add kar rahe hai...
+
+//IMP :- agar object freeze hua rahega to bhi ye nicha ka new function add nahi hoga us object me 
+newUser.greeting = function(){
+    console.log("Hello new User")
+}
+//console.log(newUser);
+console.log(newUser.greeting); //aise print karte hai to sirf function ka reference aata hai
+//console.log(newUser.greeting()); //if aap log ke andar ek function call karenge jisme ek log hoga to undefined aayega ...
+newUser.greeting()
+
+//---------------------------------------------------------------------------
+
+//if we use back tick it is called as interpolation in string
+newUser.greetingTwo = function(){
+    console.log(`Hello ${this.fullName} User`)
+}
+newUser.greetingTwo()
