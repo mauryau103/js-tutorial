@@ -58,3 +58,40 @@ console.log(users[1]);
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(tinderUser.hasOwnProperty("std"));
+
+//Destructuring-------------------
+console.log("----------------------------------------");
+
+const course = {
+    courseName: "Javascript",
+    price: "free",
+    courseInstructor: "Umesh"
+}
+
+//course.courseInstructor
+
+const {courseInstructor} = course
+
+console.log(courseInstructor);
+
+//hum log yaha uper courseInstructor ki value bahar access kar rahe hai ..
+
+//aur hum use aies name bhi de sakte hai
+
+const{courseInstructor:myteacher}=course
+console.log(myteacher);
+
+//isi ko destructring bolte hai
+
+
+//destructring ko react me thoda advance level me use kiya jayega ..
+
+//rect me methods hote hai jinhe hum prop kahte hai
+//maine niche ek props create kiya hai
+// const navbar = ({company})=>{
+
+// }
+
+// navbar(company = "hitesh")
+
+
